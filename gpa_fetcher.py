@@ -85,7 +85,7 @@ class GPAFetcher(object):
 
                 self.grades[course] = (grade, credits)
 
-            self.gui.update_status("Found {} letter grades:".format(len(self.grades)))
+            self.gui.update_status("Found single-letter grades in {} courses:".format(len(self.grades)))
             for course, tup in self.grades.items():
                 grade, credits = tup
                 self.gui.update_status("Course: {} | Grade: {} | Credits: {}".format(course.ljust(max_course_len), grade.upper(), credits))

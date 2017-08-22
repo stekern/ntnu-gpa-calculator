@@ -7,7 +7,7 @@
 # Distributed under terms of the MIT license.
 
 """
-Constants used in ntnu_gpa_fetcher.py
+Constants used in gpa_fetcher.py
 """
 
 class Location(object):
