@@ -5,10 +5,11 @@ NTNU grade fetcher and GPA calculator
 
 # Prerequisites
 * Python3
+* pip3
 * Chrome v58-60
 * Feide NTNU user
 
-# Installation for 64-bit Ubuntu 16.04
+# Installation for 64-bit Linux (tested on Ubuntu 16.04)
 ```
 $ git clone https://github.com/stekern/ntnu-gpa-calculator.git && cd ntnu-gpa-calculator/
 $ pip3 install selenium
