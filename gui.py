@@ -11,6 +11,7 @@ A basic tkinter GUI for gpa_fetcher.py
 """
 
 from tkinter import *
+from tkinter.scrolledtext import ScrolledText
 
 class GPAFetcherGUI(object):
     def __init__(self, login=None, set_gpa=None):
@@ -60,7 +61,7 @@ class GPAFetcherGUI(object):
         self.bottom_frame = Frame(self.main)
         self.bottom_frame.pack(fill=BOTH, expand=True)
 
-        self.status_text = Text(self.bottom_frame)
+        self.status_text = ScrolledText(self.bottom_frame)
         self.status_text.pack(fill=BOTH, pady=5, padx=5, expand=True)
 
     def _mid_frame_setup(self):
