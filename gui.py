@@ -37,11 +37,13 @@ class GPAFetcherGUI(object):
         self.main = Tk()
         self.main.title('NTNU GPA Calculator')
         self.main.resizable(width=False, height=False)
+        self.main.bind('<Return>', self.login)
 
         self._top_frame_setup()
         self._mid_frame_setup()
         self._bottom_frame_setup()
 
+        self.username_input.focus()
         self.disable_element(self.mid_frame)
         self.disable_element(self.bottom_frame)
 
