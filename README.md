@@ -1,5 +1,7 @@
 # ntnu-gpa-calculator
-NTNU grade fetcher and GPA calculator
+Logs in to StudentWeb with your Feide credentials, fetches all one-letter grades (i.e. courses with 'bestått' is not included), and calculates your GPA.
+
+Formula used for calculating GPA: sum(grade * credits)/sum(credits).
 
 ![Screenshot](http://imgur.com/0pc0B4O.jpg)
 
