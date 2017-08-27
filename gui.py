@@ -23,7 +23,8 @@ class GPAFetcherGUI(object):
             for child in element.winfo_children():
                 self.change_element_state(child, state)
         else:
-            element.config(state=state)
+            if ('state' in element.keys()):
+                element.config(state=state)
 
     def enable_element(self, element):
         self.change_element_state(element, NORMAL)
