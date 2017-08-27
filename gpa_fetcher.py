@@ -16,6 +16,7 @@ from gui import GPAFetcherGUI
 from constants import Selector, Location
 import threading
 import atexit
+import time
 
 class GPAFetcher(object):
     GRADE_VALUES_ASC = { "a": 1, "b": 2, "c": 3, "d": 4, "e": 5, "f": 0 }
@@ -89,6 +90,7 @@ class GPAFetcher(object):
             for course, tup in self.grades.items():
                 grade, credits = tup
                 self.gui.update_status("Course: {} | Grade: {} | Credits: {}".format(course.ljust(max_course_len), grade.upper(), credits))
+                time.sleep(.05)
 
             self.gui.update_status("Calculating GPA ...")
             self._set_gpa()
