@@ -42,7 +42,7 @@ class GPAFetcher(object):
         self.driver = webdriver.Chrome(chrome_options=options)
         self.driver.set_window_size(1,1)
 
-    def _login(self):
+    def _login(self, *args):
         def login_callback():
             self.gui.disable_element(self.gui.mid_frame)
 
