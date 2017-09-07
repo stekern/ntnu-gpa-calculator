@@ -40,7 +40,6 @@ class GPAFetcher(object):
         options.add_experimental_option('prefs', prefs)
 
         self.driver = webdriver.Chrome(chrome_options=options)
-        self.driver.set_window_size(1,1)
 
     def _login(self, *args):
         def login_callback():
