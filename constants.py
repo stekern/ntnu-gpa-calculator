@@ -16,7 +16,7 @@ class Location(object):
     STUDENTWEB_RESULTS = 'https://fsweb.no/studentweb/resultater.jsf'
 
 class Selector(object):
-    FEIDE_LINK = '//div[@class="login-module-box login-name-feide"]/form/a[@class="link"]'
+    FEIDE_LINK = '//section[@class="login-module-box login-name-feide"]/form/a[@class="link"]'
     SELECT_INSTITUTION = '//select[@name="org"]/option[@value="ntnu.no"]'
     SELECT_INSTITUTION_SUBMIT = '//input[@id="submit"]'
     USERNAME_INPUT = '//input[@id="username"]'
