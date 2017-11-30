@@ -63,6 +63,11 @@ class GPAFetcher(object):
             password_field.send_keys(password)
             self.driver.find_element_by_xpath(Selector.LOGIN_SUBMIT).click()
 
+            try:
+                self.driver.find_element_by_xpath(Selector.CONSENT).click()
+            except NoSuchElementException:
+                pass
+
             self.gui.update_status("Fetching grades ...")
             self.driver.get(Location.STUDENTWEB_RESULTS)
             results = self.driver.find_elements_by_xpath(Selector.RESULTS)

@@ -22,6 +22,7 @@ class Selector(object):
     USERNAME_INPUT = '//input[@id="username"]'
     PASSWORD_INPUT = '//input[@id="password"]'
     LOGIN_SUBMIT = '//input[@type="submit"]'
+    CONSENT = '//form/button[@id="yesbutton"]'
     RESULTS = '//table[@id="resultatlisteForm:HeleResultater:resultaterPanel"]/tbody/tr[td[@class="col6Resultat textAlignRight"]/div[@class="infoLinje"]/span[not(@class="vurderingsdelInfo")]]'
     GRADE = './/td[@class="col6Resultat textAlignRight"]/div[@class="infoLinje"]/span'
     COURSE = './/td[@class="col2Emne"]/div[@class="column-info"]/div[@class="infoLinje"]'
