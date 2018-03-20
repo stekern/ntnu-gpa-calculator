@@ -17,11 +17,12 @@ class Location(object):
 
 class Selector(object):
     FEIDE_LINK = '//section[@class="login-module-box login-name-feide"]/form/a[@class="link"]'
-    SELECT_INSTITUTION = '//select[@name="org"]/option[@value="ntnu.no"]'
-    SELECT_INSTITUTION_SUBMIT = '//input[@id="submit"]'
+    SELECT_INSTITUTION_DROPDOWN = '//input[@id="org_selector-selectized"]'
+    SELECT_INSTITUTION = '//div[@class="selectize-dropdown-content"]/div[@data-value="ntnu.no"]'
+    SELECT_INSTITUTION_SUBMIT = '//button[@id="selectorg_button"]'
     USERNAME_INPUT = '//input[@id="username"]'
     PASSWORD_INPUT = '//input[@id="password"]'
-    LOGIN_SUBMIT = '//input[@type="submit"]'
+    LOGIN_SUBMIT = '//button[@type="submit"]'
     CONSENT = '//form/button[@id="yesbutton"]'
     RESULTS = '//table[@id="resultatlisteForm:HeleResultater:resultaterPanel"]/tbody/tr[td[@class="col6Resultat textAlignRight"]/div[@class="infoLinje"]/span[not(@class="vurderingsdelInfo")]]'
     GRADE = './/td[@class="col6Resultat textAlignRight"]/div[@class="infoLinje"]/span'

@@ -50,6 +50,7 @@ class GPAFetcher(object):
             self.driver.find_element_by_xpath(Selector.FEIDE_LINK).click()
 
             self.gui.update_status('Selecting institution ...')
+            self.driver.find_element_by_xpath(Selector.SELECT_INSTITUTION_DROPDOWN).click()
             self.driver.find_element_by_xpath(Selector.SELECT_INSTITUTION).click()
             self.driver.find_element_by_xpath(Selector.SELECT_INSTITUTION_SUBMIT).click()
 
