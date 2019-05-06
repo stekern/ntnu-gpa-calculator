@@ -81,7 +81,10 @@ class GPAFetcher(object):
 
                 course = course_element.text
                 grade = grade_element.text.lower()
-                credits = float(credits_element.text.replace(',', '.'))
+                try:
+                    credits = float(credits_element.text.replace(',', '.'))
+                except:
+                    continue
 
                 if grade not in self.GRADE_VALUES_DESC.keys():
                     continue
