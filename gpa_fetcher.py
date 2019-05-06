@@ -117,7 +117,7 @@ class GPAFetcher(object):
                 grade_values = [self.GRADE_VALUES_ASC[tup[0]] * tup[1] for tup in self.grades.values()]
 
             gpa = sum(grade_values)/sum(tup[1] for tup in self.grades.values())
-            self.gui.gpa_label['text'] = "{:.5f}".format(gpa)
+            self.gui.gpa_label['text'] = "{:.5f} ({}/{})".format(gpa, sum(grade_values), sum(tup[1] for tup in self.grades.values()))
 
 if __name__ == '__main__':
     gpa_fetcher = GPAFetcher()
